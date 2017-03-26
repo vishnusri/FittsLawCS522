@@ -1,0 +1,43 @@
+/*
+.square {
+  fill: white;
+  pointer-events: all;
+}
+*/
+
+.present{
+        fill: blue;
+}
+ 
+.previous {
+    fill: white;
+}
+
+/*
+.square path {
+  -webkit-transition: fill 250ms linear;
+  transition: fill 250ms linear;
+}
+
+.square :hover {
+  fill: pink;
+}
+
+.square .fill {
+  fill: red;
+}
+
+.mesh {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+  pointer-events: none;
+}
+
+.border {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  pointer-events: none;
+}
+*/
