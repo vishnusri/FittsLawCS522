@@ -1,0 +1,233 @@
+options
+  mouse on
+  origin center
+  resolution 550 550
+
+fonts
+  arial 18
+  
+task fitts
+show text "Greetings! Your mission if you choose to accept is.." 0 0 0 255 0
+  delay 3000
+  clear 1
+show text "to try to click on the red square."  0 0 0 255 0
+  delay 3000
+  clear 2
+show text "Try clicking on it as soon as you can."  0 0 0 255 0
+  delay 3000
+  clear 3
+show text "The experiment will being in 3.."  0 0 0 255 0
+  delay 1000
+  clear 4
+show text "The experiment will being in 2.."  0 0 0 255 0
+  delay 1000
+  clear 5
+show text "The experiment will being in 1.."  0 0 0 255 0
+  delay 1000
+  clear 6
+  set $w1 10
+  set $w2 20
+  set $d1 200
+  set $d2 300
+  set $d3 400                            #choose width
+  show rectangle 0 100 $w1 $w1 255 0 0 # show rectangle
+  readmouse l 7 10000 range 7 7        # wait until user clicks 
+  clear 7
+  save $w1 $d1 RT STATUS                              
+  show rectangle 0 -100 $w1 $w1 255 0 0   # show red target
+  readmouse l 8 10000 range 8 8        # measure how long it takes to move there
+  clear 8                               # erase the red target rectangle
+  save $w1 $d1 RT STATUS                              
+  show rectangle 70 70 10 10 255 0 0
+  readmouse l 9 10000 range 9 9        # measure how long it takes to move there
+  clear 9 
+  save $w1 $d1 RT STATUS   
+  show rectangle -70 -70 10 10 255 0 0
+  readmouse l 10 10000 range 10 10        # measure how long it takes to move there
+  clear 10
+  save $w1 $d1 RT STATUS    
+  show rectangle 100 0 10 10 255 0 0
+  readmouse l 11 10000 range 11 11         # measure how long it takes to move there
+  clear 11
+  save $w1 $d1 RT STATUS   
+  show rectangle -100 0 10 10 255 0 0
+  readmouse l 12 10000 range 12 12        # measure how long it takes to move there
+  clear 12   
+  save $w1 $d1 RT STATUS
+  show rectangle 70 -70 10 10 255 0 0
+  readmouse l 13 10000 range 13 13        # measure how long it takes to move there
+  clear 13  
+  save $w1 $d1 RT STATUS 
+  show rectangle -70 70 10 10 255 0 0 
+  readmouse l 14 10000 range 14 14        # measure how long it takes to move there
+  clear 14 
+  save $w1 $d1 RT STATUS  
+   show rectangle 0 150 10 10  255 0 0
+   readmouse l 15 10000 range 15 15      # measure how long it takes to move there
+   clear 15 
+   save $w1 $d2 RT STATUS
+   show rectangle 0 -150 10 10 255 0 0
+   readmouse l 16 10000 range 16 16       # measure how long it takes to move there
+   clear 16  
+   save $w1 $d2 RT STATUS
+   show rectangle 106 106 10 10 255 0 0
+   readmouse l 17 10000 range 17 17       # measure how long it takes to move there
+   clear 17  
+   save $w1 $d2 RT STATUS
+   show rectangle -106 -106 10 10 255 0 0
+   readmouse l 18 10000 range 18 18       # measure how long it takes to move there
+   clear 18  
+   save $w1 $d2 RT STATUS
+   show rectangle 150 0 10 10 255 0 0
+   readmouse l 19 10000 range 19 19       # measure how long it takes to move there
+   clear 19  
+   save $w1 $d2 RT STATUS
+   show rectangle -150 0 10 10 255 0 0
+   readmouse l 20 10000 range 20 20       # measure how long it takes to move there
+   clear 20  
+   save $w1 $d2 RT STATUS
+   show rectangle 106 -106 10 10 255 0 0
+   readmouse l 21 10000 range 21 21       # measure how long it takes to move there
+   clear 21  
+   save $w1 $d2 RT STATUS
+   show rectangle -106 106 10 10 255 0 0 
+   readmouse l 22 10000 range 22 22       # measure how long it takes to move there
+   clear 22  
+   save $w1 $d2 RT STATUS 
+   show rectangle 0 200 10 10  255 0 0
+   readmouse l 23 10000 range 23 23       # measure how long it takes to move there
+   clear 23
+   save $w1 $d3 RT STATUS
+   show rectangle 0 -200 10 10 255 0 0
+   readmouse l 24 10000 range 24 24       # measure how long it takes to move there
+   clear 24
+   save $w1 $d3 RT STATUS
+   show rectangle 141 141 10 10 255 0 0
+   readmouse l 25 10000 range 25 25       # measure how long it takes to move there
+   clear 25
+   save $w1 $d3 RT STATUS
+   show rectangle -141 -141 10 10 255 0 0
+   readmouse l 26 10000 range 26 26       # measure how long it takes to move there
+   clear 26
+   save $w1 $d3 RT STATUS
+   show rectangle 200 0 10 10 255 0 0
+   readmouse l 27 10000 range 27 27       # measure how long it takes to move there
+   clear 27
+   save $w1 $d3 RT STATUS
+   show rectangle -200 0 10 10 255 0 0
+   readmouse l 28 10000 range 28 28       # measure how long it takes to move there
+   clear 28
+   save $w1 $d3 RT STATUS
+   show rectangle 141 -141 10 10 255 0 0
+   readmouse l 29 10000 range 29 29       # measure how long it takes to move there
+   clear 29
+   save $w1 $d3 RT STATUS
+   show rectangle -141 141 10 10 255 0 0
+   readmouse l 30 10000 range 30 30       # measure how long it takes to move there
+   clear 30
+   save $w1 $d3 RT STATUS
+   show rectangle 0 100 20 20  255 0 0
+   readmouse l 31 10000 range 31 31       # measure how long it takes to move there
+   clear 31
+   save $w2 $d1 RT STATUS
+   show rectangle 0 -100 20 20 255 0 0
+   readmouse l 32 10000 range 32 32       # measure how long it takes to move there
+   clear 32
+   save $w2 $d1 RT STATUS
+   show rectangle 70 70 20 20 255 0 0
+   readmouse l 33 10000 range 33 33       # measure how long it takes to move there
+   clear 33
+   save $w2 $d1 RT STATUS
+   show rectangle -70 -70 20 20 255 0 0
+   readmouse l 34 10000 range 34 34       # measure how long it takes to move there
+   clear 34
+   save $w2 $d1 RT STATUS
+   show rectangle 100 0 20 20 255 0 0
+   readmouse l 35 10000 range 35 35       # measure how long it takes to move there
+   clear 35
+   save $w2 $d1 RT STATUS
+   show rectangle -100 0 20 20 255 0 0
+   readmouse l 36 10000 range 36 36       # measure how long it takes to move there
+   clear 36
+   save $w2 $d1 RT STATUS
+   show rectangle 70 -70 20 20 255 0 0
+   readmouse l 37 10000 range 37 37       # measure how long it takes to move there
+   clear 37
+   save $w2 $d1 RT STATUS
+   show rectangle -70 70 20 20 255 0 0
+   readmouse l 38 10000 range 38 38       # measure how long it takes to move there
+   clear 38
+   save $w2 $d1 RT STATUS
+   show rectangle 0 150 20 20  255 0 0
+   readmouse l 39 10000 range 39 39       # measure how long it takes to move there
+   clear 39
+   save $w2 $d2 RT STATUS
+   show rectangle 0 -150 20 20 255 0 0
+   readmouse l 40 10000 range 40 40       # measure how long it takes to move there
+   clear 40
+   save $w2 $d2 RT STATUS
+   show rectangle 106 106 20 20 255 0 0
+   readmouse l 41 10000 range 41 41       # measure how long it takes to move there
+   clear 41
+   save $w2 $d2 RT STATUS
+   show rectangle -106 -106 20 20 255 0 0
+   readmouse l 42 10000 range 42 42       # measure how long it takes to move there
+   clear 42
+   save $w2 $d2 RT STATUS
+   show rectangle 150 0 20 20 255 0 0
+   readmouse l 43 10000 range 43 43       # measure how long it takes to move there
+   clear 43
+   save $w2 $d2 RT STATUS
+   show rectangle -150 0 20 20 255 0 0
+   readmouse l 44 10000 range 44 44       # measure how long it takes to move there
+   clear 44
+   save $w2 $d2 RT STATUS
+   show rectangle 106 -106 20 20 255 0 0
+   readmouse l 45 10000 range 45 45       # measure how long it takes to move there
+   clear 45
+   save $w2 $d2 RT STATUS
+   show rectangle -106 106 20 20 255 0 0
+   readmouse l 46 10000 range 46 46       # measure how long it takes to move there
+   clear 46
+   save $w2 $d2 RT STATUS
+   show rectangle 0 200 20 20  255 0 0
+   readmouse l 47 10000 range 47 47       # measure how long it takes to move there
+   clear 47
+   save $w2 $d3 RT STATUS
+   show rectangle 0 -200 20 20 255 0 0
+   readmouse l 48 10000 range 48 48       # measure how long it takes to move there
+   clear 48
+   save $w2 $d3 RT STATUS
+   show rectangle 141 141 20 20 255 0 0
+   readmouse l 49 10000 range 49 49       # measure how long it takes to move there
+   clear 49
+   save $w2 $d3 RT STATUS
+   show rectangle -141 -141 20 20 255 0 0
+   readmouse l 50 10000 range 50 50       # measure how long it takes to move there
+   clear 50
+   save $w2 $d3 RT STATUS
+   show rectangle 200 0 20 20 255 0 0
+   readmouse l 51 10000 range 51 51       # measure how long it takes to move there
+   clear 51
+   save $w2 $d3 RT STATUS
+   show rectangle -200 0 20 20 255 0 0
+   readmouse l 52 10000 range 52 52       # measure how long it takes to move there
+   clear 52
+   save $w2 $d3 RT STATUS
+   show rectangle 141 -141 20 20 255 0 0
+   readmouse l 53 10000 range 53 53       # measure how long it takes to move there
+   clear 53
+   save $w2 $d3 RT STATUS
+   show rectangle -141 141 20 20 255 0 0
+   readmouse l 54 10000 range 54 54       # measure how long it takes to move there
+   clear 54
+   save $w2 $d3 RT STATUS # save everything to data file
+
+block test
+  tasklist
+    fitts 1
+  end
+  feedback
+    text 0 0 "Press space bar to continue" 
+  end
+  
